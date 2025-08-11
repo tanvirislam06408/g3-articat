@@ -38,6 +38,7 @@ main > section{
 /* nav related items */
 .nav-bar{
   justify-content: space-between;
+  
 }
 .nav-items{
   list-style: none;
@@ -127,6 +128,19 @@ grid-template-columns: repeat(4, 1fr);
    color: rgba(114, 114, 114, 1);
    margin-top: 5px;
 }
+/* sponsor related style */
+.section-info{
+max-width: 540px;
+margin: 50px auto;
+text-align: center;
+}
+.sp-compeney{
+  display: grid;
+grid-template-columns: repeat(5, 1fr);
+ filter: grayscale(100%);
+}
+
+
 @media screen and (max-width:576px) {
   .nav-bar, .nav-links, .team{
     flex-direction: column;
@@ -134,7 +148,11 @@ grid-template-columns: repeat(4, 1fr);
     gap: 20px; */
 
   }
-  .img-container,  .facts-section{
+  .nav-link{
+  margin-left: 30%;
+  
+  }
+  .img-container,  .facts-section, .sp-compeney{
     grid-template-columns: repeat(1, 1fr);
   }
   .future-container{
@@ -143,6 +161,9 @@ grid-template-columns: repeat(4, 1fr);
   .facts-section{
     justify-items: center;
     gap: 24px;
+  }
+  .sp-compeney{
+    gap: 20px;
   }
 }
 
@@ -154,8 +175,14 @@ grid-template-columns: repeat(4, 1fr);
   .future-container{
     margin-left: 50px auto;
   }
-  .facts-section{
+  .facts-section {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    gap: 20px;
+  }
+  .sp-compeney{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+      gap: 30px;
   }
 }
